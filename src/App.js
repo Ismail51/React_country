@@ -56,12 +56,12 @@ getCountry=(country)=>{
     console.log("render population",this.state.population)
     console.log("render name",this.state.name)
     return(
-      <div>
-        <h1>{this.state.name}{this.state.capital}{this.state.flag}{this.state.region}{this.state.population}</h1>
+      <div className="container-fluid">
+        
         <Button func={this.getCountry}>France</Button>
         <Button func={this.getCountry}>Spain</Button>
         <Button func={this.getCountry}>Croatia</Button>
-        <Card name= {this.state.name} capital={this.state.capital} flag={this.state.flag}/>
+        <Card name= {this.state.name} capital={this.state.capital} flag={this.state.flag} region={this.state.region} population={this.state.population}/>
       </div>
     )
   }
